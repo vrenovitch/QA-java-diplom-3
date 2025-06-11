@@ -25,6 +25,9 @@ public class ConstructorsSectionsTest {
     @Description("Проверка выполнения перехода к разделу Булки")
     public void bunSectionTest() {
         ConstructorPage constructorsPage = new ConstructorPage(driver);
+        constructorsPage.clickFillingsButton();
+
+        constructorsPage.clickBunButton();
         constructorsPage.checkBunButtonIsActive();
     }
 

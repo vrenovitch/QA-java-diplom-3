@@ -59,6 +59,8 @@ public class ConstructorPage {
                 .until(ExpectedConditions.attributeContains(fillingsButton, "class", "current"));
     }
 
+    @Step("Нажимаем на кнопку Булки")
+    public void clickBunButton() { driver.findElement(bunButton).click(); }
 
     @Step("Нажимаем на кнопку Соусы")
     public void clickSauceButton() {
